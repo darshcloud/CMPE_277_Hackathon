@@ -14,7 +14,7 @@ Sirisha Polisetty - 016012477<br/>
 * Should be able to render time series
 * Support Network and Local Mode
 * Menu Select
-* Annotation Support
+* Annotation Support <hr style="border:2px solid gray">
 
 ![data](screenshots/upload_data.gif)
 
