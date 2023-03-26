@@ -33,7 +33,7 @@ On the Click of Agriculture icon from the footer in the home page, Agriculture D
 
 On the Click of Trade icon from the footer in the home page, Trade Dashboard will be displayed as shown below.Select the country and checkboxes to render the particular time-series graph as shown below
 
-![trade](screenshots/trade.gif)
+![trade](screenshots/trade1.gif)
 
 
 
