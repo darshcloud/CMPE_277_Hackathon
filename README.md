@@ -1,6 +1,8 @@
 # CMPE 277 Hackathon- Macro Economic And Food Security App
 
-### Team Name: Code Builders
+# Introduction
+
+### Team Name: Code Builders<br/>
 ### Team Members: <br/>
 Bhavya Hegde - 016656029<br/>
 Darshini Venkatesha Murthy Nag - 016668951<br/>
