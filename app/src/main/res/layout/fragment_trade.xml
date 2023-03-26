@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".trade">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Trade Dashboard"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#380342"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_country"
+            android:layout_width="247dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:foregroundTint="#FFFFFF"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="112dp"
+            android:fontFamily="monospace"
+            android:foregroundTint="#E91E63"
+            android:text="Trade"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <CheckBox
+            android:id="@+id/reserve"
+            android:layout_width="133dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="onCheckboxClicked"
+            android:text="Reserve"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <CheckBox
+            android:id="@+id/gni"
+            android:layout_width="131dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="onCheckboxClicked"
+            android:text="GNI"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reserve" />
+
+        <CheckBox
+            android:id="@+id/tdbt"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="onCheckboxClicked"
+            android:text="Total Debt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gni" />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/Show"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="24dp"-->
+        <!--        android:layout_marginTop="24dp"-->
+        <!--        android:text="Button"-->
+        <!--        android:onClick="showGraph"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/IE_Flows" />-->
+
+        <CheckBox
+            android:id="@+id/gni_curr"
+            android:layout_width="135dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="onCheckboxClicked"
+            android:text="GNI Current (US$)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tdbt" />
+
+        <Button
+            android:id="@+id/tradeShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showData"
+            android:text="Display"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.843" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
