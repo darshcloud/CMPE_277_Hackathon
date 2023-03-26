@@ -1,4 +1,4 @@
-# CMPE 277 hackathon- Macro Economic And Food Security App
+# CMPE 277 Hackathon- Macro Economic And Food Security App
 
 ### Team Name: Code Builders
 ### Team Members: <br/>
