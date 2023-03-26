@@ -15,10 +15,13 @@ Sirisha Polisetty - 016012477<br/>
 * Support Network and Local Mode
 * Menu Select
 * Annotation Support <hr style="border:2px solid gray">
+App Launched Successfully. Below screenshot shows the Home Page of the App.
 
 ![data](screenshots/upload_data.gif)
 
 ![macro](screenshots/macro.gif)
+
+On the Click of Macro icon from the footer in the home page, Macro economic Dashboard will be displayed as shown in the below screenshot.Select the country and checkboxes to render the particular time-series graph as shown in the below screenshots
 
 ![macro](screenshots/macro1.gif)
 
