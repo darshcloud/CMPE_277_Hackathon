@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AgricultureResult">
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Agriculture"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="#673AB7"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.094" />
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="512dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/Sy"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Start Year :"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Start_year"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1960" />
+
+
+    <TextView
+        android:id="@+id/Ey"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:text="End Year :"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/End_year"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="2020"
+        app:layout_constraintStart_toEndOf="@+id/Ey" />
+
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+<Spinner
+    android:id="@+id/spinner_country"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foregroundTint="#FFFFFF"
+    android:spinnerMode="dropdown"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.84"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.189"
+    tools:ignore="MissingConstraints" />
+
+<com.jjoe64.graphview.GraphView
+    android:id="@+id/graph"
+    android:layout_width="409dp"
+    android:layout_height="212dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.73"
+    tools:ignore="MissingConstraints"></com.jjoe64.graphview.GraphView>
+
+<Button
+    android:id="@+id/annotation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="150dp"
+    android:layout_marginTop="22dp"
+    android:layout_marginEnd="150dp"
+    android:layout_marginBottom="70dp"
+    android:text="Annotation"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/graph"
+    tools:ignore="MissingConstraints" />
+
+<ListView android:id="@android:id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" />
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:menu="@menu/bottom_menu"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

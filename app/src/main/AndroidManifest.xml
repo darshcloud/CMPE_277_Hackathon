@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmpe277.macroeconomicfoodsecurity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CMPE-277-Hackathon"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hackathoncmpe277">
+        <activity
+            android:name="com.cmpe277.macroeconomicfoodsecurity.TradeResult"
+            android:exported="false" />
+        <activity
+            android:name="com.cmpe277.macroeconomicfoodsecurity.AgricultureResult"
+            android:exported="false" />
+        <activity
+            android:name="com.cmpe277.macroeconomicfoodsecurity.MacroResult"
+            android:exported="false" />
+        <activity
+            android:name="com.cmpe277.macroeconomicfoodsecurity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
