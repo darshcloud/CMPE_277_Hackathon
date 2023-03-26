@@ -8,6 +8,14 @@ Bhavya Hegde - 016656029<br/>
 Darshini Venkatesha Murthy Nag - 016668951<br/>
 Sirisha Polisetty - 016012477<br/>
 
+#Application Requirement
+
+* Country selector 
+* Should be able to render time series
+* Support Network and Local Mode
+* Menu Select
+* Annotation Support
+
 ![data](screenshots/upload_data.gif)
 
 ![macro](screenshots/macro.gif)
